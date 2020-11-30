@@ -210,7 +210,7 @@ void ChristmasTree::Delete_node(Node*& node, const float& volume)
 			else if (node->right == nullptr)
 			{
 				Node* temp = node;
-				node = node->right;
+				node = node->left;
 
 				delete temp;
 				temp = nullptr;
