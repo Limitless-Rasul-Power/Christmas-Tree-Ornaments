@@ -173,6 +173,7 @@ void ChristmasTree::Delete_tree(Node*& node)
 		Delete_tree(node->left);
 		Delete_tree(node->right);
 		std::cout << "Deleted Ornament Volume: " << node->ornament->Get_volume() << '\n';
+		delete node;
 	}
 }
 
